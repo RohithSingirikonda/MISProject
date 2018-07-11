@@ -225,7 +225,8 @@ public Xls_Reader(String path) {
 		    //cs.setWrapText(true);
 		    //cell.setCellStyle(cs);
 		    cell.setCellValue(data);
-
+		    
+		    Thread.sleep(100);								//By Rohith Singirikonda
 		    fileOut = new FileOutputStream(path);
 
 			workbook.write(fileOut);
@@ -371,7 +372,6 @@ public Xls_Reader(String path) {
 		        
 		        cell.setCellValue(colName);
 		        cell.setCellStyle(style);
-		        
 		        fileOut = new FileOutputStream(path);
 				workbook.write(fileOut);
 			    fileOut.close();		    
